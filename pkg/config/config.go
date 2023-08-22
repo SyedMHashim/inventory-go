@@ -7,13 +7,12 @@ import (
 )
 
 type Config struct {
-	DbHost            string
-	DbPort            string
-	DbUser            string
-	DbPass            string
-	DbName            string
-	ServerPort        string
-	DBMigrationFolder string
+	DbHost     string
+	DbPort     string
+	DbUser     string
+	DbPass     string
+	DbName     string
+	ServerPort string
 }
 
 func LoadConfig() (*Config, error) {
@@ -47,17 +46,15 @@ func LoadConfig() (*Config, error) {
 	v.SetDefault("MYSQL_PASSWORD", "password")
 	v.SetDefault("MYSQL_DATABASE", "inventory")
 	v.SetDefault("SERVER_PORT", "8080")
-	v.SetDefault("DB_MIGRATION_FOLDER", "file://db/migrations")
 
 	// Load Config Values
 	c := Config{
-		DbHost:            v.GetString("MYSQL_HOST"),
-		DbPort:            v.GetString("MYSQL_PORT"),
-		DbUser:            v.GetString("MYSQL_USER"),
-		DbPass:            v.GetString("MYSQL_PASSWORD"),
-		DbName:            v.GetString("MYSQL_DATABASE"),
-		ServerPort:        v.GetString("SERVER_PORT"),
-		DBMigrationFolder: v.GetString("DB_MIGRATION_FOLDER"),
+		DbHost:     v.GetString("MYSQL_HOST"),
+		DbPort:     v.GetString("MYSQL_PORT"),
+		DbUser:     v.GetString("MYSQL_USER"),
+		DbPass:     v.GetString("MYSQL_PASSWORD"),
+		DbName:     v.GetString("MYSQL_DATABASE"),
+		ServerPort: v.GetString("SERVER_PORT"),
 	}
 
 	return &c, nil
