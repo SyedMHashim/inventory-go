@@ -45,6 +45,7 @@ func main() {
 
 	go func() {
 		// serve connections
+		log.Printf("Listening at :%s\n", cfg.ServerPort)
 		if srvErr := server.ListenAndServe(); srvErr != nil && !errors.Is(srvErr, http.ErrServerClosed) {
 			log.Fatal("Server Error", srvErr)
 		}
