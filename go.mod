@@ -6,7 +6,6 @@ require (
 	github.com/DATA-DOG/go-sqlmock v1.5.0
 	github.com/cenk/backoff v2.2.1+incompatible
 	github.com/go-sql-driver/mysql v1.7.0
-	github.com/golang-migrate/migrate/v4 v4.15.2
 	github.com/gorilla/mux v1.8.0
 	github.com/spf13/viper v1.16.0
 	github.com/stretchr/testify v1.8.3
