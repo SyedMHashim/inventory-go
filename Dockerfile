@@ -1,11 +1,15 @@
 FROM golang:1.19-alpine
 
-RUN mkdir /inventory-go
-WORKDIR /inventory-go
+RUN mkdir /app
+WORKDIR /app
 
-ADD go.* /inventory-go/
+ADD go.* /app/
 RUN go mod download
 
-ADD . /inventory-go/
+ADD . /app/
 RUN go build -o inventory ./cmd/main.go
-ENTRYPOINT ["./inventory"]
+
+FROM alpine:latest
+WORKDIR /app
+COPY --from=0 /app/inventory ./
+CMD ["./inventory"]
