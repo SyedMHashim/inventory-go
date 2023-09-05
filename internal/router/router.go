@@ -8,7 +8,7 @@ import (
 	"regexp"
 	"strconv"
 
-	"example.com/apiserver/pkg/db"
+	"example.com/apiserver/internal/db"
 	"github.com/gorilla/mux"
 )
 
