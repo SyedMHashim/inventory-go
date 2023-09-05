@@ -10,7 +10,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"example.com/apiserver/pkg/db"
+	"example.com/apiserver/internal/db"
 	"github.com/DATA-DOG/go-sqlmock"
 	"github.com/gorilla/mux"
 	"github.com/stretchr/testify/assert"

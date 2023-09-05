@@ -11,9 +11,9 @@ import (
 	"syscall"
 	"time"
 
-	"example.com/apiserver/pkg/config"
-	"example.com/apiserver/pkg/db"
-	"example.com/apiserver/pkg/router"
+	"example.com/apiserver/internal/config"
+	"example.com/apiserver/internal/db"
+	"example.com/apiserver/internal/router"
 
 	_ "github.com/go-sql-driver/mysql"
 )
