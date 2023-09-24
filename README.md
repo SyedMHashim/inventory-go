@@ -7,6 +7,9 @@ The purpose of this project is to demonstrate how to develop a complete API serv
 - github.com/go-sql-driver/mysql
 - github.com/spf13/viper
 
+## Hexagonal Architecture
+For a much scalable & expandable implementation using hexagonal architecture, view the branch, [hexagonal-architecture](https://github.com/SyedMHashim/inventory-go/tree/hexagonal-architecture)
+
 ## Getting started
 
 ### Pre-requisites
