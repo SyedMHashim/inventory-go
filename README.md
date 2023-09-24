@@ -8,7 +8,7 @@ The purpose of this project is to demonstrate how to develop a complete API serv
 - github.com/spf13/viper
 
 ## Hexagonal Architecture
-For a much scalable & expandable implementation using hexagonal architecture, view the branch, [hexagonal-architecture](https://github.com/SyedMHashim/inventory-go/tree/hexagonal-architecture)
+This implementation is inspired by the blog, [The Practical Hexagonal Architecture for Golang](https://medium.com/@briannqc/the-practical-hexagonal-architecture-for-golang-742a49bc8d89). This enables us to decouple the core application logic with the external factors eg, database, api etc, hence, making it more scalable and expandable. This way we can add multiple input or output ports & adapters while keeping the application logic same as it is.
 
 ## Getting started
 
